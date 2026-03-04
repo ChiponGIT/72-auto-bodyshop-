@@ -1,1 +1,266 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Crossroad Auto Detail & Body Shop</title>
+  <meta name="description" content="Crossroad Auto Detail & Body Shop — detailing + body work. Get a quote today." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
 
+<body>
+  <div class="bgGrid" aria-hidden="true"></div>
+  <div class="scanlines" aria-hidden="true"></div>
+
+  <header class="termTop">
+    <div class="termBar">
+      <div class="dots">
+        <span class="dot r"></span>
+        <span class="dot y"></span>
+        <span class="dot g"></span>
+      </div>
+      <div class="termTitle">
+        crossroad@shop: ~ <span class="muted">website</span>
+      </div>
+
+      <div class="termRight">
+        <button class="pillBtn" id="themeBtn" type="button" title="Toggle theme">▣</button>
+      </div>
+    </div>
+
+    <div class="navRow">
+      <button class="navBtn active" data-page="home">home</button>
+      <button class="navBtn" data-page="services">services</button>
+      <button class="navBtn" data-page="work">work</button>
+      <button class="navBtn" data-page="reviews">reviews</button>
+      <button class="navBtn" data-page="contact">contact</button>
+
+      <div class="spacer"></div>
+
+      <a class="navCta" id="callTop" href="tel:+10000000000">call</a>
+      <a class="navCta ghost" href="#quote">quote</a>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="termWindow">
+      <div class="termHeader">
+        <div class="prompt">
+          <span class="user">crossroad</span><span class="muted">@</span><span class="host">autoshop</span>
+          <span class="muted">:</span><span class="path">~/</span><span id="pagePath">home</span>
+          <span class="muted">$</span>
+          <span class="cmd" id="cmdText">open home</span><span class="cursor">█</span>
+        </div>
+        <div class="status" id="statusText">READY</div>
+      </div>
+
+      <!-- SLIDE PAGES -->
+      <div class="pages" id="pages">
+        <!-- HOME -->
+        <article class="page show" data-page="home">
+          <div class="heroTerm">
+            <div>
+              <div class="tag">DETAILING • BODY • PAINT • COLLISION</div>
+              <h1>Crossroad Auto Detail <span class="accent">&</span> Body Shop</h1>
+              <p class="lead">
+                Clean work. Clean finish. Honest service.
+                From deep interior details to collision repairs—we’ll get you right.
+              </p>
+
+              <div class="infoRow">
+                <div class="infoCard">
+                  <div class="k">hours</div>
+                  <div class="v" id="hoursText">Mon–Sat: 9am–6pm • Sun: Closed</div>
+                </div>
+                <div class="infoCard">
+                  <div class="k">location</div>
+                  <div class="v" id="locationText">Your City, State</div>
+                </div>
+              </div>
+
+              <div class="btnRow">
+                <button class="btn" data-page="contact">open contact</button>
+                <button class="btn ghost" data-page="services">view services</button>
+              </div>
+            </div>
+
+            <div class="rightPanel" id="quote">
+              <div class="panelTitle">quick_quote.sh</div>
+              <div class="panelSub muted">Sends through your email app (no backend).</div>
+
+              <form class="form" id="quoteForm">
+                <label>
+                  <span class="lab">name</span>
+                  <input required name="name" placeholder="Your name" />
+                </label>
+                <label>
+                  <span class="lab">phone_or_email</span>
+                  <input required name="contact" placeholder="(555) 123-4567" />
+                </label>
+                <label>
+                  <span class="lab">service</span>
+                  <select name="service">
+                    <option>Detailing (Interior/Exterior)</option>
+                    <option>Paint Correction / Polish</option>
+                    <option>Ceramic Coating</option>
+                    <option>Collision Repair</option>
+                    <option>Dent / Scratch Repair</option>
+                    <option>Other</option>
+                  </select>
+                </label>
+                <label>
+                  <span class="lab">message</span>
+                  <textarea name="msg" rows="4" placeholder="Vehicle + what you want done"></textarea>
+                </label>
+
+                <button class="btn full" type="submit">send_quote</button>
+                <div class="hint muted" id="formHint">Tip: add photos later if you want 👀</div>
+              </form>
+            </div>
+          </div>
+
+          <div class="divider"></div>
+
+          <div class="monoBlock">
+            <div class="monoLine"><span class="muted">></span> status: <span class="ok">OPEN</span></div>
+            <div class="monoLine"><span class="muted">></span> response_time: <span class="ok">FAST</span></div>
+            <div class="monoLine"><span class="muted">></span> focus: <span class="accent">quality</span> + <span class="accent">clean finish</span></div>
+          </div>
+        </article>
+
+        <!-- SERVICES -->
+        <article class="page" data-page="services">
+          <h2>services</h2>
+          <p class="muted">Pick what you need. We can bundle detail + body work too.</p>
+
+          <div class="grid">
+            <div class="card">
+              <div class="cardTitle">full_detail</div>
+              <div class="muted">Interior deep clean + exterior finish.</div>
+              <ul>
+                <li>shampoo seats/carpets</li>
+                <li>leather condition</li>
+                <li>wheels + trim</li>
+              </ul>
+            </div>
+
+            <div class="card">
+              <div class="cardTitle">paint_correction</div>
+              <div class="muted">Swirls, haze, and light scratches—gone.</div>
+              <ul>
+                <li>1-step / multi-step</li>
+                <li>headlight restore</li>
+                <li>paint protection</li>
+              </ul>
+            </div>
+
+            <div class="card">
+              <div class="cardTitle">ceramic_coating</div>
+              <div class="muted">Long-term protection + crazy gloss.</div>
+              <ul>
+                <li>hydrophobic shine</li>
+                <li>UV/chemical resistance</li>
+                <li>maintenance plans</li>
+              </ul>
+            </div>
+
+            <div class="card">
+              <div class="cardTitle">body_shop</div>
+              <div class="muted">Collision repair + paint work.</div>
+              <ul>
+                <li>bumpers + panels</li>
+                <li>dent/scratch repair</li>
+                <li>insurance-friendly</li>
+              </ul>
+            </div>
+          </div>
+        </article>
+
+        <!-- WORK -->
+        <article class="page" data-page="work">
+          <h2>work</h2>
+          <p class="muted">Placeholders for now—swap in your before/after photos.</p>
+
+          <div class="workGrid">
+            <div class="workCard">
+              <div class="workImg">BEFORE</div>
+              <div class="workImg">AFTER</div>
+              <div class="workMeta">
+                <div class="cardTitle">interior_detail</div>
+                <div class="muted">Deep clean + stain removal.</div>
+              </div>
+            </div>
+
+            <div class="workCard">
+              <div class="workImg">BEFORE</div>
+              <div class="workImg">AFTER</div>
+              <div class="workMeta">
+                <div class="cardTitle">scratch_repair</div>
+                <div class="muted">Blend + polish for a clean match.</div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- REVIEWS -->
+        <article class="page" data-page="reviews">
+          <h2>reviews</h2>
+          <p class="muted">Drop real reviews in here later (Google/Yelp screenshots too if you want).</p>
+
+          <div class="grid two">
+            <div class="card">
+              <div class="stars">★★★★★</div>
+              <div>“Fast, clean, and my car looked brand new.”</div>
+              <div class="muted">— Customer</div>
+            </div>
+            <div class="card">
+              <div class="stars">★★★★★</div>
+              <div>“Paint match was perfect. Super professional.”</div>
+              <div class="muted">— Customer</div>
+            </div>
+          </div>
+        </article>
+
+        <!-- CONTACT -->
+        <article class="page" data-page="contact">
+          <h2>contact</h2>
+          <p class="muted">Call / text / email. We’ll get you a quote quick.</p>
+
+          <div class="grid two">
+            <div class="card">
+              <div class="cardTitle">phone</div>
+              <a class="link" id="phoneLink" href="tel:+10000000000">(000) 000-0000</a>
+              <div class="muted">tap to call</div>
+            </div>
+
+            <div class="card">
+              <div class="cardTitle">email</div>
+              <a class="link" id="emailLink" href="mailto:crossroadautodetail@example.com">crossroadautodetail@example.com</a>
+              <div class="muted">fast reply</div>
+            </div>
+
+            <div class="card">
+              <div class="cardTitle">address</div>
+              <div id="addressText">123 Main St, Your City, ST</div>
+              <div class="muted">add your real address</div>
+            </div>
+
+            <div class="card">
+              <div class="cardTitle">map</div>
+              <div class="muted">You can embed Google Maps later.</div>
+              <div class="mapFake">[ map_embed_placeholder ]</div>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <footer class="termFooter">
+        <div class="muted">© <span id="year"></span> Crossroad Auto Detail & Body Shop</div>
+        <div class="muted">built on github pages</div>
+      </footer>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
